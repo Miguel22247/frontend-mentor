@@ -64,6 +64,8 @@ body {
 
 .view-image:hover {
     opacity: 1;
+    transition: 0.3s;
+    cursor: pointer;
 }
 
 .view-image img {
@@ -73,4 +75,104 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.card h2 {
+    color: hsl(0, 100%, 100%);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-top: 1.3rem;
+    margin-bottom: 0.8rem;
+    cursor: pointer;
+}
+
+.card h2:hover {
+    color: hsl(178, 100%, 50%);
+}
+
+.card p {
+    color: hsl(215, 51%, 70%);
+    font-weight: 300;
+    line-height: 1.44rem;
+}
+
+.icons {
+    margin: 1rem 0 1rem 0;
+}
+
+.icons {
+    margin: 1rem 0 1rem 0;
+}
+
+.icons ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons ul li {
+    display: flex;
+    gap: 0.3rem;
+}
+
+.icons ul li img {
+    align-items: center;
+}
+
+.eth {
+    font-weight: 400;
+    color: hsl(178, 100%, 50%);
+}
+
+.clock {
+    font-weight: 300;
+    color: hsl(215, 51%, 70%)
+}
+
+.separator {
+    border-bottom: 1px solid hsl(215, 32%, 27%);
+}
+
+.user {
+    display: flex;
+    align-items: center;
+    gap: 0.9rem;
+    margin-top: 0.9rem;
+}
+
+.user img {
+    width: 2rem;
+    border: 1px solid hsl(0, 100%, 100%);
+    border-radius: 50%;
+}
+
+.user p {
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+
+.user p span {
+    color:hsl(0, 100%, 100%);
+}
+
+.user p span:hover {
+    color:hsl(178, 100%, 50%);
+    cursor: pointer;
+}
+
+/* attribution */
+
+.attribution {
+    text-align: center;
+    padding-bottom: 1.25rem;
+    font-size: 0.85rem;
+    font-weight: 300;
+    color: hsl(215, 51%, 70%);
+}
+
+.attribution a {
+    color:hsl(0, 100%, 100%)
+}
+
+.attribution a:hover {
+    color: hsl(178, 100%, 50%);
 }
