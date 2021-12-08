@@ -1,11 +1,21 @@
 /* font */
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
 
+/* variables */
+:root {
+    /* colors */
+    --bg-color: hsl(217, 54%, 11%);
+    --card-color: hsl(216, 50%, 16%);
+    --text-color: hsl(215, 51%, 70%);
+    --title-avatar-color: #ffffff;
+    --hover-color: hsl(178, 100%, 50%);
+    --line-color: hsl(215, 32%, 27%);
+}
 
 /* reset */
 * {
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
     font-family: 'Outfit', sans-serif;
 }
@@ -19,7 +29,7 @@ a {
 }
 
 body {
-    background-color: hsl(217, 54%, 11%);
+    background: var(--bg-color);
 }
 
 /* container */
@@ -33,16 +43,16 @@ body {
 
 /* card */
 .card {
-    background-color: hsl(216, 50%, 16%);
+    background: var(--card-color);
     padding: 1.5rem;
     width: 20rem;
     height: 32.3rem;
     border-radius: 1rem;
-    box-shadow: 0px 20px 7px 5px #080f1a75;
+    box-shadow: 0px 20px 7px 13px #080f1a75;
 }
 
 .card-image {
-   position: relative;
+    position: relative;
 }
 
 .card-image img {
@@ -52,6 +62,8 @@ body {
     border-radius: 0.5rem;
 }
 
+
+/* view image */
 .view-image {
     position: absolute;
     top: 0;
@@ -72,33 +84,42 @@ body {
     position: absolute;
     width: 3rem;
     height: 3rem;
-    top: 50%;
     left: 50%;
+    top:50%;
     transform: translate(-50%, -50%);
 }
 
+/* texts */
 .card h2 {
-    color: hsl(0, 100%, 100%);
-    font-weight: 600;
-    font-size: 1.1rem;
+    color: var(--title-avatar-color);
     margin-top: 1.3rem;
     margin-bottom: 0.8rem;
-    cursor: pointer;
+    font-size: 1.1rem;
+    font-weight: 600;
 }
 
 .card h2:hover {
-    color: hsl(178, 100%, 50%);
+    color: var(--hover-color);
+    cursor: pointer;
 }
 
 .card p {
-    color: hsl(215, 51%, 70%);
+    color: var(--text-color);
     font-weight: 300;
     line-height: 1.44rem;
 }
 
-.icons {
-    margin: 1rem 0 1rem 0;
+.eth {
+    font-weight: 400;
+    color: var(--hover-color);
 }
+
+.clock {
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+/* icons */
 
 .icons {
     margin: 1rem 0 1rem 0;
@@ -118,20 +139,7 @@ body {
     align-items: center;
 }
 
-.eth {
-    font-weight: 400;
-    color: hsl(178, 100%, 50%);
-}
-
-.clock {
-    font-weight: 300;
-    color: hsl(215, 51%, 70%)
-}
-
-.separator {
-    border-bottom: 1px solid hsl(215, 32%, 27%);
-}
-
+/* user */
 .user {
     display: flex;
     align-items: center;
@@ -141,38 +149,42 @@ body {
 
 .user img {
     width: 2rem;
-    border: 1px solid hsl(0, 100%, 100%);
     border-radius: 50%;
+    border: 1px solid var(--title-avatar-color);
 }
 
 .user p {
-    font-size: 0.9rem;
     font-weight: 300;
+    font-size: 0.9rem;
 }
 
 .user p span {
-    color:hsl(0, 100%, 100%);
+    color:var(--title-avatar-color);
 }
 
 .user p span:hover {
-    color:hsl(178, 100%, 50%);
+    color: var(--hover-color);
     cursor: pointer;
 }
 
-/* attribution */
+/* misc */
+.line {
+    border-bottom: 1px solid var(--line-color);
+}
 
+/* attribution */
 .attribution {
     text-align: center;
     padding-bottom: 1.25rem;
     font-size: 0.85rem;
     font-weight: 300;
-    color: hsl(215, 51%, 70%);
+    color: var(--text-color);
 }
 
 .attribution a {
-    color:hsl(0, 100%, 100%)
+    color: var(--title-avatar-color);
 }
 
 .attribution a:hover {
-    color: hsl(178, 100%, 50%);
+    color: var(--hover-color);
 }
