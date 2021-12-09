@@ -1,0 +1,213 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+
+/* variables */
+:root{
+    --violet: hsl(257, 40%, 49%);
+    --soft-magenta: hsl(300, 69%, 71%);
+}
+
+/* reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+/* mobile */
+body {
+    background: url(../images/bg-mobile.svg) no-repeat center top, linear-gradient(var(--violet), var(--violet));
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 15vh 30vh 40vh 15vh;
+}
+
+/*header */
+header img {
+    width: 40%;
+    height: 80%;
+    object-fit: scale-down;
+    margin-left: 10%;
+}
+
+/* hero */
+.hero {
+    text-align: center;
+    padding: 1rem;
+}
+
+.hero img {
+    width: 90%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* info text */
+.info-text {
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+.info-text h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    width: 80%;
+    margin: 0 auto 1rem;
+}
+
+.info-text p {
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+    width: 80%;
+    margin: 0 auto 1rem;
+    line-height: 1.5;
+}
+
+/* info-text button */
+.info-text button {
+    background: white;
+    color: var(--violet);
+    border: none;
+    padding: 0.6rem 4rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    border-radius: 2rem;
+    transition: 0.1s ease-in;
+    margin: 0 auto 1rem;
+    box-shadow: 0px 3px 5px 0px rgb(37, 37, 37);
+}
+
+.info-text button:hover {
+    background: var(--soft-magenta);
+    color: white;
+    cursor: pointer;
+}
+
+.info-text button:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+
+/* footer */
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .social-logos {
+    width: 100%;
+    text-align: center;
+}
+
+footer .social-logos a{
+    border:1px solid white;
+    border-radius: 100%;
+    color: white;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    text-decoration: none;
+    position: relative;
+    margin: 0 .4rem;
+}
+
+footer .social-logos a:hover{
+    border:1px solid var(--soft-magenta);
+    color: var(--soft-magenta);
+}
+
+.social-logos a i{
+    position: absolute;
+    top: 24%;
+    left: 24%;
+}
+
+/* attribution */
+footer .attribution{
+    font-family: 'Open sans', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    margin: 1rem 0;
+    cursor:default;
+}
+footer .attribution a{
+    color: var(--soft-magenta);
+    text-decoration: none;
+    cursor: pointer;
+}
+footer .attribution a:hover{
+    text-decoration: underline;
+}
+footer .attribution a:active{
+    color: white;
+}
+
+/* desktop */
+@media screen and (min-width: 1020px) and (orientation: landscape) {
+    body{
+        background: url("images/bg-desktop.svg") left/contain no-repeat , linear-gradient(var(--violet), var(--violet));
+        display: grid;
+        grid-template-columns: 55vw 45vw;
+        grid-template-rows: 15vh 70vh 15vh;
+    }
+
+    .header{
+        grid-column: 1 / 2;
+        grid-row: 1;
+    }
+    .header img{
+        margin:5% 0;
+    }
+
+    .hero{
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .hero img{
+        object-fit: contain;
+    }
+
+    .info-text{
+        grid-column: 2;
+        grid-row: 2;
+        text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .info-text h1{
+        font-size: 3.1rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-text p{
+        font-size: 1.45rem;
+        margin:0;
+        margin-bottom: 1.5rem;
+    }
+
+    .info-text button{
+        font-size: 1.1rem;
+        padding: 0.8rem 5rem;
+        margin: 0;
+        margin-bottom: 1.5rem;
+    }
+
+    footer{
+        grid-column: 2;
+        grid-row: 3;
+        justify-content: center;
+    }
+}
+}
