@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/frontend-mentor/nft-component-card/static/css/main.6ea08e37.css",
+    "main.js": "/frontend-mentor/nft-component-card/static/js/main.c4338050.js",
+    "static/media/image-equilibrium.jpg": "/frontend-mentor/nft-component-card/static/media/image-equilibrium.88bdbc91a544a2a4d04a.jpg",
+    "index.html": "/frontend-mentor/nft-component-card/index.html",
+    "static/media/icon-view.svg": "/frontend-mentor/nft-component-card/static/media/icon-view.fedac5512cc6657af397a76d5e03ea37.svg",
+    "static/media/icon-clock.svg": "/frontend-mentor/nft-component-card/static/media/icon-clock.991a65225dab4fadc84345ecb35faa1b.svg",
+    "static/media/icon-ethereum.svg": "/frontend-mentor/nft-component-card/static/media/icon-ethereum.5221f33297e5dc863451e2da9a758c12.svg",
+    "main.6ea08e37.css.map": "/frontend-mentor/nft-component-card/static/css/main.6ea08e37.css.map",
+    "main.c4338050.js.map": "/frontend-mentor/nft-component-card/static/js/main.c4338050.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6ea08e37.css",
+    "static/js/main.c4338050.js"
+  ]
+}
