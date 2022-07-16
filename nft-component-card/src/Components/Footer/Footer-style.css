@@ -1,0 +1,33 @@
+/* font */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+  /* font */
+  --font: 'Outfit', sans-serif;
+
+  /* Colors */
+  --soft-blue: hsl(215, 51%, 70%);
+  --cyan: hsl(178, 100%, 50%);
+  --very-dark-blue-main-BG: hsl(217, 54%, 11%);
+  --very-dark-blue-card-BG: hsl(216, 50%, 16%);
+  --very-dark-blue-line-BG: hsl(215, 32%, 27%);
+  --white: hsl(0, 0%, 100%);
+}
+
+/* attribution */
+
+.attribution {
+  text-align: center;
+  padding-bottom: 1.25rem;
+  font-size: 0.85rem;
+  font-weight: 300;
+  color: hsl(215, 51%, 70%);
+}
+
+.attribution a {
+  color:hsl(0, 100%, 100%)
+}
+
+.attribution a:hover {
+  color: hsl(178, 100%, 50%);
+}

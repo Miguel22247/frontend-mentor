@@ -1,0 +1,23 @@
+
+/* reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: var(--font);
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: hsl(217, 54%, 11%);
+}
+
+/* container */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
