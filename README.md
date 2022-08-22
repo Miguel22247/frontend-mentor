@@ -3,3 +3,6 @@
 
 
 ## Projects
+* NFT Card
+* QR Code component card
+* Product View component
